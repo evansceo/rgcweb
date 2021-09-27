@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -21,6 +22,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="pics/Redeemed logo.jpg">
     <style></style>
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -218,11 +220,34 @@
             <p>Meditation</p>
           </div>
         </div>
+        <div class="col-sm-4">
+          <p class="text-center"><strong>Media</strong></p>
+          <br />
+          <a href="#demo4" data-toggle="collapse">
+            <img
+              src="pics/IMG_3273.JPG"
+              class="img-circle person"
+              alt="Random Name"
+              width="255"
+              height="255"
+            />
+          </a>
+          <div id="demo4" class="collapse">
+            <p>Photography</p>
+            <p>video</p>
+            <p>Recording</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="sermons" class="sermon-videos">
       <h3>SERMONS</h3>
       <div class="vida-con">
+        <div class=" rgb(204, 210, 221)">
+          <video width="400" height="240" controls>
+            <source src="Videos/videoplayback.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="video">
           <video width="400" height="240" controls>
             <source src="Videos/videoplayback 1.mp4" type="video/mp4">
@@ -230,70 +255,38 @@
         </div>
         <div class="video">
           <video width="400" height="240" controls>
-            <source src="Videos/videoplayback.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video">
-          <video width="400" height="240" controls>
             <source src="Videos/videoplayback 2.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video">
-          <video width="400" height="240" controls>
-            <source src="Videos/videoplayback 3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video">
-          <video width="400" height="240" controls>
-            <source src="Videos/2021-08-29 10-10-52.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video">
-          <video width="400" height="240" controls>
-            <source src="Videos/2021-08-29 08-33-31.mp4" type="video/mp4">
-          </video>
       </div>
     </div>
-    <div id="events" class="events">
+  
+
+    <div class="eventAnnounce">
       <h3>EVENTS & ANNOUNCEMENTS</h3>
       <p>These are the latest news and updates on events.</p>
-      <div class="section">
-        <div class="giving">
-          <div class="giving-con">
-            <p><strong>Revivals</strong></p>
-            <p>There will be Revivals from 25th - 29th August, <br>2021. Our guest speake will be</p>
+      <div class="announcementEvent">
+        <div class="announcement">
+          <p><strong>Youth Rally</strong></p>
+            <p>Youth Rally is an upcoming event on 17th October, <br>2021. Our guest speake will be Apsl. T. Mwangi</p>
             <img class="building-project"
-              src="pics/IMG-20210821-WA0017.jpg"
-              alt="building-project"
-              width="900"
-              height="250"
-            />
-          </div>
+              src="pics/YOUTH RALLY 2.jpg"
+              alt="building-project"/>
         </div>
-        <div class="giving">
-          <div class="giving-con">
-            <p><strong>Ladies Seminar</strong><p>
+        <div class="announcement">
+          <p><strong>Ladies Seminar</strong><p>
             <p>Queen Esther Generation has organised <br> a <strong>Ladies Semina</strong> that start on ...</p>
              <img class="building-project"
               src="pics/IMG-20210829-WA0132.jpg"
-              alt="building-project"
-              width="400"
-              height="300"
-            />
-          </div>
+              alt="building-project"/>
         </div>
-        <div class="giving">
-          <div class="giving-con">
-            <p><strong>Ministry Announcements</strong></p>
+        <div class="announcement">
+          <p><strong>Ministry Announcements</strong></p>
             <p>You are encouraged to participate in various <br> ministries, which includes but not limited to.</p>
             <img class="building-project"
               src="pics/IMG-20210822-WA0004.jpg"
-              alt="building-project"
-              width="400"
-              height="300"
-            />
-         </div>
-       </div>
+              alt="building-project" />
+        </div>
       </div>
     </div>
 
@@ -301,7 +294,7 @@
     <div id="tour" class="bg-1">
       <div class="container">
         <h3 class="text-center">TITHING & GIVING</h3>
-        <p class="text-center">
+        <p id="text-center1">
           Please kindly find a way to tithe and give as well as <br> giving towards church building project.
         </p>
         <!--<ul class="list-group">
@@ -315,10 +308,10 @@
         </ul> -->
 
         <div class="row-text-center">
-          <div class="col-sm-4">
+          <div class="giving">
             <div class="thumbnail">
               <img
-                class="paybill"
+                class="thumbnailimg"
                 src="pics/paybill.jpg"
                 alt="paybill"
                 width="400"
@@ -326,14 +319,14 @@
               />
               <p><strong>Mpesa & Paybill No.</strong></p>
               <p>Church Paybill and Mpesa number</p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">
+              <button class="btn1" data-toggle="modal" data-target="#myModal">
                 GIVE
               </button>
             </div>
           </div>
           <div class="giving">
             <div class="thumbnail">
-              <img class="bank-pay"
+              <img class="thumbnailimg"
                 src="pics/bank.jpg"
                 alt="bank-pay"
                 width="400"
@@ -343,22 +336,22 @@
               <p>
                 You can also deposit dirrectly to the church bank account.
               </p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">
+              <button class="btn1" data-toggle="modal" data-target="#myModal">
                 GIVE
               </button>
             </div>
           </div>
           <div class="giving">
             <div class="thumbnail">
-              <img class="building-project"
+              <img class="thumbnailimg"
                 src="pics/IMG-20210822-WA0004.jpg"
                 alt="building-project"
-                width="400"
+                width="200"
                 height="300"
               />
               <p><strong>Church Building Project</strong></p>
               <p>Give towards completion of the church building project.</p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">
+              <button class="btn1" data-toggle="modal" data-target="#myModal">
                 GIVE
               </button>
             </div>
@@ -425,6 +418,7 @@
     </div>
 
     <!-- Container (Contact Section) -->
+  <div class="con-container">
     <div id="contact" class="container">
       <h3 class="text-center">Pastors Perspectives</h3>
       <ul class="nav nav-tabs">
@@ -439,8 +433,10 @@
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
           <h2>Pst. George Muchiri, Lead Pastor</h2>
+          <img id="muchiri" src="pics/IMG_3241.JPG" alt="">
           <p>
-            We are a community built on the life and teachings of Jesus. God loves you, and his arms are open wide to welcome people home. You belong here
+            We believe Jesus’ Word is relevant, powerful, and life-changing. We also believe there is a famine for true Biblical preaching in the Church throughout America. We have determined to boldly proclaim His Word and to celebrate life together as the Church to the glory of the One who’s name is above all names!
+            We invite you to experience life with us at Fellowship. Come as you are and join us as we pursue life together as the Church and the Community of Believers. Come join us and find out what living is all about.
           </p>
         </div>
         <div id="menu1" class="tab-pane fade">
@@ -519,6 +515,7 @@
           </div>
         </div>
     </div>
+  </div>
 
     <!-- Image of location/map -->
 
